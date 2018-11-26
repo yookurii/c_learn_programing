@@ -14,7 +14,6 @@ int main(void) {
 		}
 		printf("\n");
 	}
-	printf("\n\n");
 
 	for (int n = 0; n < 2; n++) {
 		for (int m = 0; m < 9; m++) {
@@ -33,6 +32,7 @@ int main(void) {
 		}
 		d = 8;
 	}
+	printf("•À‚Ñ‘Ö‚¦Œã\n");
 	for (int o = 0; o < 4; o++) {
 		printf("%ds–Ú > ", o + 1);
 		for (int p = 0; p < 9; p++) {
