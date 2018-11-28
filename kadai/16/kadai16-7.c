@@ -7,9 +7,6 @@ int main(void) {
 				if (y == i && x == j) {
 					printf("Åñ");
 				}
-				else if (i == 1 || j == 1) {
-					printf("Å°");
-				}
 				else {
 					printf("Å†");
 				}
