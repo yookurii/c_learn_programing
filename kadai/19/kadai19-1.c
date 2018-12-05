@@ -1,4 +1,3 @@
-/* ‰Û‘è2-1 */
 #include <stdio.h>
 
 int main(void) {
