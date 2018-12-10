@@ -1,13 +1,20 @@
 #include <stdio.h>
 
-int three(int a){
-	int ret = 3 * a;
-	return ret;
+int kakezan(int a, int b);
+
+void main(void){
+	int a, b, kotae;
+	printf("整数 a の値は？ > ");
+	scanf("%d", &a);
+	printf("整数 b の値は？ > ");
+	scanf("%d", &b);
+
+	kotae = kakezan(a, b);
+	printf("a と b の積は %d です。\n", kotae);
 }
 
-void main(void) {
-	int x, i;
-	printf("整数を入力してください > "); scanf("%d", &x);
-	i = three(x);
-	printf("xの3倍は%dです。\n", i);
+int kakezan(int a, int b) {
+	int c;
+	c = a * b;
+	return c;
 }
