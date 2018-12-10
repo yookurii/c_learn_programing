@@ -1,18 +1,26 @@
 #include <stdio.h>
 
-void print2018();
+int sumAtoB(int a,int b,int c);
 
 void main(void) {
-	int a;
-	printf("繰り返し回数を入力してください > ");
+	int a, b, c,sum;
+	printf("aの値は？ > ");
 	scanf("%d", &a);
-	print2018(a);
-	return;
+	printf("bの値は？ > ");
+	scanf("%d", &b);
+	printf("cの値は？ > ");
+	scanf("%d", &c);
+
+	sum = sumAtoB(a, b, c);
+
+	printf("%dから%dまでの整数で、%dで割り切れるものの合計は%dです。\n", a, b, c,sum);
 }
 
-void print2018(int a) {
-	for (int i = 0; i < a; i++) {
-		printf("2018\n");
+int sumAtoB(int a, int b, int c) {
+	int sum=0;
+	for (int i = a; i <= b; i++) {
+		if (i%c == 0) sum += i;
+		else;
 	}
-	return a;
+	return sum;
 }
