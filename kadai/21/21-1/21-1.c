@@ -1,23 +1,28 @@
 #include <stdio.h>
-
-/*
-* 本体が func.c の中に書かれている関数 fact は、main.c からは見えません。
-* そのため、プロトタイプ宣言が書かれた func.h をインクルードして、
-* 関数の引数と戻り値の型を知る必要があります。
-*/
 #include "func.h"
+int x = 0;
+int a = 0;
+void func01(void);
+void func02(void);
 
 int main(void)
 {
-	/* ここからプログラムがスタートします。 */
-
-	/* キーボードから整数を読み込み、その階乗を表示します。 */
-	int a;
-
-	printf("0 以上の整数を入力してください > ");
-	scanf("%d", &a);
-
-	printf("%d の階乗は %d です。\n", a, fact(a));
-
+	printf("プログラム開始: x==%d\n", x);
+	x = 16;
+	printf("x==16; を実行: x==%d\n", x);
+	func01();
+	printf("関数 func01 を実行: x==%d\n", x);
+	func02();
+	printf("関数 func02 を実行: x==%d\n", x);
+	x=func03(a);
+	printf("関数 func03 を実行: x==%d\n", x);
 	return 0;
+}
+
+void func01(void) {
+	x = 256;
+}
+
+void func02(void) {
+	x = 4096;
 }
