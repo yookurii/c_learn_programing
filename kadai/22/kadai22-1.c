@@ -1,5 +1,7 @@
 #include <stdio.h>
 #define LAST 3
+#define KOTAE1 "合計値は"
+#define KOTAE2 "です。\n"
 #define P printf
 int main(void) {
 	int a,b=0;
@@ -9,5 +11,5 @@ int main(void) {
 		scanf("%d", &a);
 		b += a;
 	}
-	P("合計値は %d です。\n",b);
+	P("%s%d%s",KOTAE1,b,KOTAE2);
 }
