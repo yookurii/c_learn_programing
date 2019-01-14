@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 int main(void) {
-	double x, y, a;
-	
-	printf("ŒvŽZŒ‹‰Ê‚Í%f‚Å‚·B\n", a);
+	printf("®”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ > ");
+	scanf("%d", &a);
+
 	return 0;
 }
